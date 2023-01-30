@@ -1,0 +1,106 @@
+.Header {
+    border: 0.1px solid transparent;
+    max-width: 100%;
+    background: #770613;
+}
+
+.mycontainer {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.nav__ul {
+    font-family: Roboto Slab;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1.2799999713897705px;
+    text-align: left;
+    width: 500px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__right {
+    max-width: 70%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav img {
+    object-fit: contain;
+}
+
+.nav__select {
+    margin: 20px;
+    height: 21px;
+    background-color: transparent;
+}
+
+.nav__btn {
+    background: #167526;
+    color: white;
+    height: 61px;
+    width: 234px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 30px 20px 30px;
+}
+
+.nav__btn p {
+    margin-top: 0;
+    font-family: Roboto Slab;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1.2799999713897705px;
+}
+
+.hero__left {
+    color: white;
+    width: 100%;
+    background-image: url(../../assets/img/baground.png);
+}
+
+.hero {
+    display: flex;
+}
+
+.hero__info {
+    margin-top: 200px;
+    max-width: 100%;
+}
+
+.hero__info h4 {
+    font-family: Roboto Slab;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+}
+
+.hero__info h1 {
+    font-family: Roboto Slab;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 79px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.hero__right{
+    width: 100%;
+    text-align: center;
+}
+.img {
+    margin: 200px 0;
+}

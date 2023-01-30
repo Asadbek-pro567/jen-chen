@@ -1,0 +1,38 @@
+.turlari {
+    height: 946.0234375px;
+    max-width: 100%;
+    border: 1px solid transparent;
+    background-image: url(../../assets/img/turlari.png);
+    object-fit: cover;
+}
+
+.js {
+    margin: 250px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h2 {
+    color: white;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 170px;
+}
+
+
+.h21{
+    color: white;
+    margin-top: 500px;
+    margin-left: 1050px;
+    position: absolute;
+}
+.poa{
+    margin-top: 210px;
+    margin-left: 180px;
+    position: absolute;
+}
+.po{
+    margin-top: 210px;
+    margin-left: 1020px;
+    position: absolute;
+}

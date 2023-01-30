@@ -1,11 +1,14 @@
 import React from 'react'
+import Buyurtma from '../../components/Buyurtma/Buyurtma'
 import Header from '../../components/Header/Header'
+import Turlari from '../../components/Turlari/Turlari'
 
 function Home() {
   return (
     <div>
-        <h1>Home</h1>
         <Header/>
+        <Buyurtma/>
+        <Turlari/>
     </div>
   )
 }
