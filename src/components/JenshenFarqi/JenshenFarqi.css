@@ -105,3 +105,8 @@
     margin-right: 15px;
 }
 
+.itemBottom__right img:hover{
+    cursor: pointer;
+    transform: scale(1.010);
+    transition: all  ease-out 0.3s;
+}
