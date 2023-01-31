@@ -1,0 +1,66 @@
+.containercha{
+    color: #4D3300;
+}
+.should__drink{
+    background-image: url(../../assets/img/mainFooterSup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1640px;
+    margin: 0 auto;
+}
+.should__drink__inner{
+    margin: 0 auto;
+    padding: 0 100px;
+}
+.should__drink__inner div{
+    max-width: 1040px;
+}
+.should__drink__inner h2{
+    font-size: 52px;
+    padding-top: 100px;
+}
+.should__drink__inner div ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 740px;
+    padding-bottom: 400px;
+    margin: 0;
+}
+.should__drink__inner div ul li{
+    width: 330px;
+    margin: 20px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 960px) {
+    .should__drink{
+        width: 100%;
+    }
+    .should__drink__inner{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .should__drink__inner h2{
+        font-size: 36px;
+        width: 100%;
+    }
+    .should__drink__inner div ul{
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .should__drink__inner div ul li{
+        font-size: 18px;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .should__drink__inner h2{
+        font-size: 26px;
+    }
+    .should__drink__inner div ul li{
+        font-size: 14px;
+    }
+}
