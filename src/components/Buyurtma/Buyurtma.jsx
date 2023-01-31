@@ -19,9 +19,9 @@ function Buyurtma() {
             <div className="mikrofon">
                 <img src={mikr} alt="" className='mikr'/>
                 <h1 className='chegirma'>Chegirma</h1>
-                <h1 className='oldingi'>1 399 000</h1>
-                <h1 className='narx'>1 199 000</h1>
-                <h2 className='foyda'>foyda 200 000</h2>
+                <h1 className='oldingi'><h1>1 399 000</h1></h1>
+                <h1 className='narx'><h1>1 199 000</h1></h1>
+                <h2 className='foyda'><h4>foyda 200 000</h4></h2>
             </div>
             </div>
         </div>
