@@ -1,0 +1,157 @@
+.Footer{
+    max-width: 100%;
+    background: linear-gradient(180deg, #AC2232 0%, #5B040E 100%);
+}
+
+.mycontainer {
+    margin: 0 auto;
+    max-width: 90%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 234px 0 94px;
+}
+.footer__contact{
+    /* width: 17%; */
+    width: 230px;
+    /* border: 1px solid red; */
+}
+.contact__info{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 38px 0 65px;
+}
+.contact__links{
+    display: flex;
+    align-items: center;
+}
+.contact__links > .link{
+    margin-left: 48px;
+}
+.telegram{
+    margin-left: 0 !important;
+}
+.link > a{
+    color: white;
+    text-decoration: none;
+}
+/* .link > a > i{
+
+} */
+
+
+/* Components start */
+
+.footer__components{
+    margin: 30px;
+}
+
+.footer__components > .component{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.component > a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Components end */
+
+
+/* Form start */
+
+.footer__form{
+    /* width: 25%; */
+    width: 307px;
+    /* border: 1px solid red; */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form > .form__title{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.form > input{
+    background: #89363D;
+    border-radius: 10px;
+    width: 94%;
+    height: 52px;
+    border-radius: 10px;
+    padding-left: 20px;
+    color: white;
+    outline: none;
+    border: none;
+}
+.form > input:first-of-type{
+    margin: 22px 0 29px;
+}
+::placeholder{
+    color: white;
+}
+.form > button{
+    width: 100%;
+    text-align: center;
+    padding: 17.5px 0;
+    margin-top: 34px;
+    text-transform: uppercase;
+    background: #B04C08;
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 885px) {
+    .footer__row{
+        align-items: flex-start;
+    }
+    .footer__components{
+        margin-top: 0;
+    }
+    .footer__form{
+        margin-top: 20px;
+    }
+    .mycontainer {
+        background-position: center;
+    }
+}
+@media (max-width: 525px) {
+   
+    .footer__components{
+        margin-left: 0;
+    }
+    .footer__row{
+        padding: 94px 0 94px;
+    }
+}
