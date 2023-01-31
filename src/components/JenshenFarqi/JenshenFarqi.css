@@ -13,7 +13,9 @@
     height: 484.8780517578125px;
     width: 655px;
     background-image: url('../../assets/img/JenshenFarqiBg.png');
+    background-repeat: no-repeat;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .itemTop__left p{
@@ -28,6 +30,7 @@
     margin: 0 auto;
 }
 
+
 .jenshenFarqi__items-center{
     display: flex;
     justify-content: space-around;
@@ -39,24 +42,12 @@
     margin-bottom: 30px;
 }
 
-.itemCenter__right img:hover{
-    cursor: pointer;
-    transform: scale(1.010);
-    transition: all  ease-out 0.3s;
-
-}
-
-.itemTop__right img:hover{
-    cursor: pointer;
-    transform: scale(1.010);
-    transition: all  ease-out 0.3s;
-
-}
-
 .itemCenter__left{
     height: 484.8780517578125px;
     width: 655px;
     background-image: url('../../assets/img/JenshenFarqiBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .itemCenter__left p{
@@ -109,4 +100,30 @@
     cursor: pointer;
     transform: scale(1.010);
     transition: all  ease-out 0.3s;
+}
+
+
+@media screen and (max-width: 960px) {
+    .JenshenFarqi{
+        width: 100%;
+        margin: 0 20px;
+        padding: 0;
+    }
+    .itemTop__left{
+        width: 100%;
+        order: 2;
+    }
+    .itemTop__left p{
+        width: 100%;
+    }
+    .itemTop__right{
+        width: 100%;
+    }
+    .itemTop__right img{
+        width: 100%;
+        
+    }
+    .itemTop__right{
+        order: 1;
+    }
 }

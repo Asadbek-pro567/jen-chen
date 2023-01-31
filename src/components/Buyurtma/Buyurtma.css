@@ -47,7 +47,10 @@
     height: 67.81818389892578px;
     width: 406.9090881347656px;
     border-radius: 13.04195785522461px;
-
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 .buyurtma button {
