@@ -1,7 +1,8 @@
 import React from 'react'
-import './Header.css'
+
+import './Header.scss'
 import logo from '../../assets/img/logo.png'
-import img from '../../assets/img/img.png'
+import img from '../../assets/img/header__right.png'
 function Header() {
   return (
     <div className='Header'>
@@ -9,7 +10,6 @@ function Header() {
         <div className="nav">
           <img src={logo} alt="" />
           <div className="nav__right">
-
             <ul className='nav__ul'>
               <li> <a href="#"> Kompaniya haqida </a></li>
               <li> <a href="#"> FAKTLAR </a></li>
@@ -20,11 +20,14 @@ function Header() {
               <option value="Ru">Ru</option>
               <option value="Eng">Eng</option>
             </select>
-            <button className='nav__btn'>
-              <p><a href="#">BUYURTMA BERISH</a></p>
-            </button>
+            <a href="#" className='a'>
+                <button className="nav__btn">
+                  BUYURTMA BERISH
+                </button>
+              </a>
           </div>
         </div>
+
         <div className="hero">
           <div className="hero__left">
             <div className="hero__info">
@@ -32,12 +35,13 @@ function Header() {
                 100% tabiiy
               </h4>
               <h1>
-                Koreya qizil jenshen <br />
-                ichimligi
+                Koreya qizil jenshen ichimligi
               </h1>
-              <button className="nav__btn">
-              <a href="#">BUYURTMA BERISH</a>
-              </button>
+              <a href="#" className='a'>
+                <button className="nav__btn">
+                  BUYURTMA BERISH
+                </button>
+              </a>
             </div>
           </div>
           <div className="hero__right">
