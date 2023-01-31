@@ -1,3 +1,9 @@
 .App{
     font-family: Roboto Slab;
 }
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
