@@ -13,10 +13,10 @@ function Home() {
         <Header/>
         <Buyurtma/>
         <Turlari/>
+        <JenshenFarqi/>
 
         <JenChen/>
 
-        <JenshenFarqi/>
         <Fact />
         <Footer />
     </div>

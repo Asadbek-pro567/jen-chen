@@ -1,9 +1,8 @@
 .Footer{
-    max-width: 100%;
     background: linear-gradient(180deg, #AC2232 0%, #5B040E 100%);
 }
 
-.mycontainer {
+.mycontainerrr {
     margin: 0 auto;
     max-width: 1440px;
     background-position: center bottom;

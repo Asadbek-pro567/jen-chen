@@ -3,8 +3,21 @@ import React from 'react'
 function JenChen() {
   return (
     <>
-    <div>
-        <h1>JenChen</h1>
+    <div className='container'>
+        {
+            ShouldDrink?.map((e,i)=>(
+                <>
+                <h2>{e.title_uz}</h2>
+                <ul>
+                    {
+                        e.cause.map((item)=>(
+                            <li>{item.text_uz}</li>
+                        ))
+                    }
+                </ul>
+                </>
+            ))
+        }
     </div>
     </>
   )
