@@ -1,0 +1,107 @@
+.JenshenFarqi{
+    padding-top: 75.50px;
+}
+
+.jenshenFarqi__items-top{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 136px;
+}
+
+.itemTop__left{
+    height: 484.8780517578125px;
+    width: 655px;
+    background-image: url('../../assets/img/JenshenFarqiBg.png');
+    margin-bottom: 30px;
+}
+
+.itemTop__left p{
+    height: 454px;
+    max-width: 578px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.jenshenFarqi__items-center{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 137px;
+}
+
+.itemCenter__right{
+    margin-bottom: 30px;
+}
+
+.itemCenter__right img:hover{
+    cursor: pointer;
+    transform: scale(1.010);
+    transition: all  ease-out 0.3s;
+
+}
+
+.itemTop__right img:hover{
+    cursor: pointer;
+    transform: scale(1.010);
+    transition: all  ease-out 0.3s;
+
+}
+
+.itemCenter__left{
+    height: 484.8780517578125px;
+    width: 655px;
+    background-image: url('../../assets/img/JenshenFarqiBg.png');
+}
+
+.itemCenter__left p{
+    height: 454px;
+    max-width: 578px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    align-items: center;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.jenshenFarqi__items-bottom{
+    height: 602px;
+    max-width: 1440px;
+    background-image: url('../../assets/img/JenshenFarqiBottomBg.png');
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-bottom: 239px;
+}
+
+.jenshenFarqi__Bottom-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itemBottom__left p{
+    height: 424px;
+    width: 670px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    margin-right: 15px;
+}
+
