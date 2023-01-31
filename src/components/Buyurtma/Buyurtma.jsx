@@ -13,7 +13,7 @@ function Buyurtma() {
                 <input type="text" placeholder='Ism' />
                 <input type="text" placeholder='+998' />
                 <button>
-                Buyurtma berish
+                <a href="#">Buyurtma berish</a>
                 </button>
             </div>
             <div className="mikrofon">

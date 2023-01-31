@@ -59,6 +59,9 @@
     width: 408.2132873535156px;
     border-radius: 6.520978927612305px;
 }
+.buyurtma button a{
+    color: white;
+}
 .chegirma{
     color: white;
     font-family: Bitter;

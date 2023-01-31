@@ -6,46 +6,30 @@
     object-fit: cover;
 }
 
-.js {
-    margin: 250px 0;
+.uy {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
 
-.h2 {
-    font-family: Roboto Slab;
-font-size: 32px;
-font-weight: 400;
-line-height: 62px;
-letter-spacing: 0em;
-text-align: left;
+.uy li {
+    background-image: url(../../assets/img/uy.png);
+    text-align: center;
+    height: 565px;
+    width: 680px;
+    margin: 220px 0;
+}
 
+.uy li img {
+    margin: 220px auto;
+}
+
+.uy li h2 {
     color: white;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: 170px;
-}
-
-
-.h21{
     font-family: Roboto Slab;
-font-size: 32px;
-font-weight: 400;
-line-height: 62px;
-letter-spacing: 0em;
-text-align: left;
-    color: white;
-    margin-top: 500px;
-    margin-left: 1000px;
-    position: absolute;
-}
-.poa{
-    margin-top: 210px;
-    margin-left: 180px;
-    position: absolute;
-}
-.po{
-    margin-top: 210px;
-    margin-left: 1020px;
-    position: absolute;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    margin: -200px;
 }

@@ -1,7 +1,8 @@
 .Header {
+    background-image: url(../../assets/img/header.bag.jpg);
     border: 0.1px solid transparent;
     max-width: 100%;
-    background: #770613;
+    background-size: 100%;
 }
 
 .mycontainer {
@@ -28,7 +29,9 @@
     display: flex;
     justify-content: space-between;
 }
-
+.nav__ul li a{
+    color: black;
+}
 .nav__right {
     max-width: 70%;
     height: 61px;
@@ -41,6 +44,7 @@
 }
 
 .nav__select {
+    border: none;
     margin: 20px;
     height: 21px;
     background-color: transparent;
@@ -55,7 +59,9 @@
     border: none;
     padding: 20px 30px 20px 30px;
 }
-
+.nav__btn a{
+    color: white;
+}
 .nav__btn p {
     margin-top: 0;
     font-family: Roboto Slab;

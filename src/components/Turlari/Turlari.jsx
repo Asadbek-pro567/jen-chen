@@ -7,12 +7,16 @@ function Turlari() {
         <div className='turlari'>
             <div className="mycontainer">
                 <div className="js">
-                    <img src={turlari} alt="" />
-                    <img src={jenshen} alt="" className='poa' />
-                    <img src={turlari} alt="" />
-                    <img src={jenshen} alt="" className='po' />
-                    <h2 className='h2'>Oddiy jen shen 1 199 000</h2>
-                    <h2 className='h21'>Qizil jen shen 1 199 000</h2>
+                    <ul className="uy">
+                        <li>
+                            <img src={jenshen} alt="" />
+                            <h2>Qizil jen shen 1 199 000</h2>
+                        </li>
+                        <li>
+                            <img src={jenshen} alt="" />
+                            <h2>Qizil jen shen 1 199 000</h2>
+                        </li>
+                    </ul>
                 </div>
 
             </div>

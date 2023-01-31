@@ -11,9 +11,9 @@ function Header() {
           <div className="nav__right">
 
             <ul className='nav__ul'>
-              <li>Kompaniya haqida</li>
-              <li>FAKTLAR</li>
-              <li>MAHSULOT</li>
+              <li> <a href="#"> Kompaniya haqida </a></li>
+              <li> <a href="#"> FAKTLAR </a></li>
+              <li> <a href="#"> MAHSULOT </a></li>
             </ul>
             <select className='nav__select'>
               <option value="Uz">Uz</option>
@@ -21,7 +21,7 @@ function Header() {
               <option value="Eng">Eng</option>
             </select>
             <button className='nav__btn'>
-              <p>BUYURTMA BERISH</p>
+              <p><a href="#">BUYURTMA BERISH</a></p>
             </button>
           </div>
         </div>
@@ -36,7 +36,7 @@ function Header() {
                 ichimligi
               </h1>
               <button className="nav__btn">
-              BUYURTMA BERISH
+              <a href="#">BUYURTMA BERISH</a>
               </button>
             </div>
           </div>
