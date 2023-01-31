@@ -5,10 +5,11 @@
 
 .mycontainer {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 1440px;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: auto;
+    background-image: url(../../assets/img/footerImage.png);
 }
 
 .footer__row{
@@ -152,6 +153,6 @@
         margin-left: 0;
     }
     .footer__row{
-        padding: 94px 0 94px;
+        padding: 94px 20px;
     }
 }

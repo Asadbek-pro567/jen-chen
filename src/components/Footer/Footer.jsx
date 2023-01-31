@@ -7,7 +7,7 @@ import logo from '../../assets/img/logo.png';
 const Footer = () => {
     return (
         <div  className='Footer'>
-            <div style={{backgroundImage: `url(${footerImage})` }} className="mycontainer">
+            <div className="mycontainer">
                 <div className="footer__row">
                     <div className="footer__contact">
                         <div className="contact__logo">
