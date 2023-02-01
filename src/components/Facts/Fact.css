@@ -49,7 +49,7 @@
     border-bottom-right-radius: 2px;
 }
 .content__price > span{
-    font-size: 30px;
+    font-size: 30px !important;
 }
 .content__info{
     font-family: 'Roboto Slab';
