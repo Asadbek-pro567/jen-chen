@@ -30,7 +30,7 @@ const Fact = () => {
                             </div>
                             <div className="fact__content">
                                 <div className="content__price">
-                                    1.3 <p id="price_desc">mlrd</p>
+                                    1.3 <span>mlrd</span>
                                 </div>
                                 <div className="content__info">
                                     1,3 mlrd xitoyliklar 
