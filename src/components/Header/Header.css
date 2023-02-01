@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    align-items: center;
+}
+.nav img{
+    width: 150px;
 }
 
 .nav__ul {
@@ -41,6 +45,7 @@
     max-width: 70%;
     height: 61px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .hero__right img{
@@ -143,6 +148,7 @@
 }
 .navbr__colapse .nav__btn{
     background-color: rgb(235, 232, 232);
+    margin-bottom: 0;
 }
 .navbr__colapse  .nav__btn  a{
     color: black !important;
@@ -153,7 +159,7 @@
     z-index: 999;
     overflow-y: auto;
     min-height: 305px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.923);
     position: absolute;
     top: 137px;
     display: flex;

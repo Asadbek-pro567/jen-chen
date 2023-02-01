@@ -39,6 +39,7 @@ function Header() {
             <div onClick={() => setMenu(!menu)} className="menu">
               <span></span>
               <span></span>
+              <span></span>
             </div>
           </div>
         </div>

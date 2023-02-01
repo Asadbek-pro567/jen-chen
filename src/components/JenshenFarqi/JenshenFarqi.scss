@@ -10,16 +10,15 @@
 }
 
 .itemTop__left{
-    height: 484.8780517578125px;
     width: 655px;
     background-image: url('../../assets/img/JenshenFarqiBg.png');
     background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
 .itemTop__left p{
-    height: 454px;
     max-width: 578px;
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -43,15 +42,13 @@
 }
 
 .itemCenter__left{
-    height: 484.8780517578125px;
     width: 655px;
     background-image: url('../../assets/img/JenshenFarqiBg.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .itemCenter__left p{
-    height: 454px;
     max-width: 578px;
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -64,17 +61,14 @@
 }
 
 .jenshenFarqi__items-bottom{
-    /* height: 602px; */
     max-width: 1440px;
     background-image: url('../../assets/img/JenshenFarqiBottomBg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* flex-wrap: wrap; */
     margin-bottom: 239px;
 }
 
@@ -87,7 +81,6 @@
 }
 
 .itemBottom__left p{
-    height: 424px;
     width: 670px;
     font-family: 'Roboto Slab';
     font-style: normal;
@@ -104,10 +97,6 @@
     overflow: hidden;
     cursor: pointer;    
 }
-/* .itemBottom__right img:hover{
-    transform: scale(1.010);
-    transition: all  ease-out 0.3s;
-} */
 
 @media screen and (max-width: 1310px) {
     .JenshenFarqi{
@@ -136,29 +125,60 @@
 }
 
 @media screen and (max-width: 960px) {
-    
+    .jenshenFarqi__items-center{
+        padding-bottom: 0;
+    }
+    .jenshenFarqi__items-top{
+        padding-bottom: 0;
+    }
+    .itemTop__right{
+        img{
+            width: 100%;
+        }
+    }
+    .itemTop__left{
+        p{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .itemCenter__right{
+        img{
+            width: 100%;
+        }
+    }
+    .itemCenter__left{
+        p{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .jenshenFarqi__items-bottom{
+        margin-bottom: 0;
+        padding: 20px;
+        height: auto;
+        .jenshenFarqi__Bottom-info{
+            width: 100%;
+            height: auto;
+            .itemBottom__right{
+                width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                }
+            }
+            .itemBottom__left{
+                width: 100%;
+                height: auto;
+                p{
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
 }
-// @media screen and (max-width: 970px) {
-//     .JenshenFarqi{
-//         width: 100%;
-//         margin: 0 20px;
-//         padding: 0;
-//     }
-//     .itemTop__left{
-//         width: 100%;
-//         order: 2;
-//     }
-//     .itemTop__left p{
-//         width: 100%;
-//     }
-//     .itemTop__right{
-//         width: 100%;
-//     }
-//     .itemTop__right img{
-//         width: 100%;
-        
-//     }
-//     .itemTop__right{
-//         order: 1;
-//     }
-// }
