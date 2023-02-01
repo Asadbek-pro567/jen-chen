@@ -1,48 +1,113 @@
 .turlari {
-    max-width: 100%;
+    width: 100%;
     border: 1px solid transparent;
     background-image: url(../../assets/img/turlari.png);
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mycontainer{
+.myycontainer{
     max-width: 1440px;
     margin: 0 auto;
+    padding: 100px 0 200px;
 }
 
-.uy {
+.uyyyyy {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-evenly;
+    padding-left: 0;
     flex-wrap: wrap;
 }
 
-.uy li {
+.uyyyyy li {
     background-image: url(../../assets/img/uy.png);
     background-repeat: no-repeat;
-    text-align: center;
-    height: 565px;
-    width: 680px;
-    margin-top: 220px;
-    margin-bottom: 140px;
+    background-size: 100%;
+    width: 580px;
+    height: 495px;
+    margin-top: 100px;
 }
 
-.uy li img {
-    margin: 220px auto;
+.uyyyyy li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 180px;
+}
+.uyyyyy li img{
+    width: 270px;
 }
 
-.uy li h2 {
+.uyyyyy li h2 {
     color: white;
     font-family: Roboto Slab;
     font-size: 25px;
     font-weight: 400;
     line-height: 62px;
     letter-spacing: 0em;
-    margin-top: -200px;
+    padding-top: 30px;
 }
-@media(max-width:1600px){
-    .ul li{
-        border: 1px solid #000;
+@media screen and (max-width: 1260px) {
+    .turlari{
+        padding: 0 20px;
     }
+    .uyyyyy{
+        width: 100%;
+    }
+    .myycontainer{
+        padding: 0;
+
+    }
+    .uyyyyy{
+        justify-content: center;
+    }
+    .uyyyyy li:nth-child(2){
+        margin: 0;
+    }
+    .uyyyyy li{
+        width: 400px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .uyyyyy li img{
+        width: 190px;
+    }
+    .uyyyyy li h2{
+        padding-top: 0;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1010px) {
+    /* .uyyyyy li{
+        width: 250px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .uyyyyy li img{
+        width: 165px;
+    }
+    .uyyyyy li h2{
+        padding-top: 0;
+        font-size: 18px;
+    } */
+}
+@media screen and (max-width: 470px) {
+    .turlari{
+        padding: 0 20px;
+    }
+    .uyyyyy li{
+        width: 100%;
+        padding-top: 35%;
+        height: auto;
+
+    }
+    .uyyyyy li h2{
+        font-size: 12px;
+    }
+    .uyyyyy li img{
+        width: 40%;
+    }
+    
 }
