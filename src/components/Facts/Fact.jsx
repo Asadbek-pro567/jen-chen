@@ -1,12 +1,13 @@
 import React from 'react';
 import './Fact.css';
 import factCard from '../../assets/img/factCard.png';
+import { FactsInNum } from '../../assets/data/Data';
 
 const Fact = () => {
     return (
         <div className='Fact'>
             <div className="mycontainer">
-                <div className="fact__title">Faktlar sonlarda</div>
+                <div className="fact__title">{FactsInNum[0].title_uz}</div>
                 <div className="fact__cards">
                     <div className="fact__row">
                         <div className="fact__card">
