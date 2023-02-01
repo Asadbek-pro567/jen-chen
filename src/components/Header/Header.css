@@ -250,9 +250,6 @@ a{
     .img{
         max-width: 770px;
     }
-    .Header{
-        /* background: #770613; */
-    }
     .hero__info{
         margin-top: 100px;
         text-align: center;
@@ -305,8 +302,6 @@ a{
     .oldingi h1{
         width: 300px;
         margin-left: 200px;
-    }
-    .narx{
     }
     .narx h1{
         width: 250px;
