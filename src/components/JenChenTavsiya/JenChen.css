@@ -18,6 +18,7 @@
 .should__drink__inner h2{
     font-size: 52px;
     padding-top: 100px;
+    margin-top: 0;
 }
 .should__drink__inner div ul{
     list-style-type: none;

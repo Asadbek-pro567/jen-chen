@@ -1,0 +1,29 @@
+
+
+.about{
+    background-image: url(../../assets/img/katta__uy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .containerrr{
+        max-width: 1440px;
+        margin: 0 auto;
+        div{
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+            color: #fff;
+            list-style-type: none;
+            h2{
+                font-size: 54px;
+                padding-top: 52px;
+            }
+            p{
+                font-size: 26px;
+            }
+            img{
+                margin-top: -140px;
+                object-fit: cover;
+            }
+        }
+    }
+}

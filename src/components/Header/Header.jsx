@@ -11,16 +11,16 @@ function Header() {
           <img src={logo} alt="" />
           <div className="nav__right">
             <ul className='nav__ul'>
-              <li> <a href="#"> Kompaniya haqida </a></li>
-              <li> <a href="#"> FAKTLAR </a></li>
-              <li> <a href="#"> MAHSULOT </a></li>
+              <li> <a href="#about"> Kompaniya haqida </a></li>
+              <li> <a href="#faktlar"> FAKTLAR </a></li>
+              <li> <a href="#mahsulot"> MAHSULOT </a></li>
             </ul>
             <select className='nav__select'>
               <option value="Uz">Uz</option>
               <option value="Ru">Ru</option>
               <option value="Eng">Eng</option>
             </select>
-            <a href="#" className='a'>
+            <a href="#zakaz" className='a'>
                 <button className="nav__btn">
                   BUYURTMA BERISH
                 </button>
@@ -37,7 +37,7 @@ function Header() {
               <h1>
                 Koreya qizil jenshen ichimligi
               </h1>
-              <a href="#" className='a'>
+              <a href="#zakaz" className='a'>
                 <button className="nav__btn">
                   BUYURTMA BERISH
                 </button>

@@ -39,7 +39,11 @@
     align-items: center;
 }
 .contact__links > .link{
+    transition: 0.4s ease-in-out;
     margin-left: 48px;
+}
+.contact__links > .link:hover{
+    transform: rotate(360deg);
 }
 .telegram{
     margin-left: 0 !important;
@@ -48,10 +52,6 @@
     color: white;
     text-decoration: none;
 }
-/* .link > a > i{
-
-} */
-
 
 /* Components start */
 

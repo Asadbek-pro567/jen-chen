@@ -4,7 +4,7 @@ import turlari from '../../assets/img/uy.png'
 import jenshen from '../../assets/img/jenshen.png'
 function Turlari() {
     return (
-        <div className='turlari'>
+        <div className='turlari' id='mahsulot'>
             <div className="mycontainer">
                 <div className="js">
                     <ul className="uy">

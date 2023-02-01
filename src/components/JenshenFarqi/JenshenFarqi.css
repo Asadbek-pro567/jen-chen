@@ -96,11 +96,16 @@
     margin-right: 15px;
 }
 
-.itemBottom__right img:hover{
-    cursor: pointer;
+.itemBottom__right img{
+    width: 550px;
+    height: 390px;
+    overflow: hidden;
+    cursor: pointer;    
+}
+/* .itemBottom__right img:hover{
     transform: scale(1.010);
     transition: all  ease-out 0.3s;
-}
+} */
 
 
 @media screen and (max-width: 960px) {

@@ -33,7 +33,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer__components">
-                        <div className="component"><a href="#bizHaqimizda">KOMPANIYA HAQIDA</a></div>
+                        <div className="component"><a href="#about">KOMPANIYA HAQIDA</a></div>
                         <div className="component"><a href="#faktlar">FAKTLAR</a></div>
                         <div className="component"><a href="#mahsulot">MAHSULOT</a></div>
                     </div>

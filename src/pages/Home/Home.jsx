@@ -1,4 +1,6 @@
 import React from 'react'
+import './Home.scss'
+import About from '../../components/About/About'
 import Buyurtma from '../../components/Buyurtma/Buyurtma'
 import Fact from '../../components/Facts/Fact'
 import Footer from '../../components/Footer/Footer'
@@ -13,8 +15,9 @@ function Home() {
     <div>
         <Header/>
         <Buyurtma/>
-        {/* <Turlari/> */}
+        <Turlari/>
         <JenshenFarqi/>
+        <About/>
         <JenChen/>
         <Ildiz/>
 

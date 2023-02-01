@@ -4,7 +4,7 @@ import factCard from '../../assets/img/factCard.png';
 
 const Fact = () => {
     return (
-        <div className='Fact'>
+        <div className='Fact' id='faktlar'>
             <div className="mycontainer">
                 <div className="fact__title">Faktlar sonlarda</div>
                 <div className="fact__cards">

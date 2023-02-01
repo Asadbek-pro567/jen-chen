@@ -5,16 +5,18 @@ function Buyurtma() {
   return (
     <div>
         <div className="mycontainer">
-            <div className="Buyurtma">
+            <div className="Buyurtma" id='zakaz'>
                 
             <div className="buyurtma">
                 <h2>Buyurtma berish</h2>
                 <h4>Formani toʻldiring, mutaxascislardan bepul konsultatsiya oling va chegirmaga ega boling</h4>
                 <input type="text" placeholder='Ism' />
                 <input type="text" placeholder='+998' />
+                <a href="#">
                 <button>
-                <a href="#">Buyurtma berish</a>
+                Buyurtma berish
                 </button>
+                </a>
             </div>
             <div className="mikrofon">
                 <img src={mikr} alt="" className='mikr'/>
