@@ -48,7 +48,8 @@
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-.content__price > span{
+.content__price > p{
+    display: inline-block;
     font-size: 30px !important;
 }
 .content__info{
