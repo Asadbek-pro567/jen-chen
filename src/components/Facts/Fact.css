@@ -81,4 +81,10 @@
         margin-top: 15px;
         width: 59%; 
     }
+    #price_desc{
+        font-size: 23px;
+        line-height: 23px;
+        margin: 0!important;
+        padding: 0!important;
+    }
 }
