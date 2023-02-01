@@ -7,7 +7,7 @@ function Header() {
   const [ menu, setMenu ] = useState(false);
   return (
     <div className='Header'>
-      <div className="mycontainer">
+      <div className="mycontainerrrr">
         <div className="nav">
           <img src={logo} alt="" />
           <div className="nav__right">
@@ -35,9 +35,6 @@ function Header() {
                   BUYURTMA BERISH
                 </button>
               </a> */}
-            <button className='change_none nav__btn'>
-              <p><a href="#zakaz">BUYURTMA BERISH</a></p>
-            </button>
              
             <div onClick={() => setMenu(!menu)} className="menu">
               <span></span>
