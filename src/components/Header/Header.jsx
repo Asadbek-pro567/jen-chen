@@ -1,33 +1,50 @@
-import React from 'react'
-
-import './Header.scss'
+import React, { useState } from 'react'
+import './Header.css'
 import logo from '../../assets/img/logo.png'
-import img from '../../assets/img/header__right.png'
+import img from '../../assets/img/img.png'
 function Header() {
+
+  const [ menu, setMenu ] = useState(false);
   return (
     <div className='Header'>
       <div className="mycontainer">
         <div className="nav">
           <img src={logo} alt="" />
           <div className="nav__right">
-            <ul className='nav__ul'>
+            {/* <ul className='nav__ul'>
+              <li> <a href="#"> Kompaniya haqida </a></li>
+              <li> <a href="#"> FAKTLAR </a></li>
+              <li> <a href="#"> MAHSULOT </a></li> */}
+            <ul className='change_none nav__ul'>
               <li> <a href="#about"> Kompaniya haqida </a></li>
               <li> <a href="#faktlar"> FAKTLAR </a></li>
               <li> <a href="#mahsulot"> MAHSULOT </a></li>
             </ul>
-            <select className='nav__select'>
+            <select className='change_none none'>
+              <option value="">Kompaniya haqida</option>
+              <option value="">FAKTLAR </option>
+              <option value="">MAHSULOT </option>
+            </select>
+            <select className='change_select nav__select'>
               <option value="Uz">Uz</option>
               <option value="Ru">Ru</option>
               <option value="Eng">Eng</option>
             </select>
-            <a href="#zakaz" className='a'>
+            {/* <a href="#zakaz" className='a'>
                 <button className="nav__btn">
                   BUYURTMA BERISH
                 </button>
-              </a>
+              </a> */}
+            <button className='change_none nav__btn'>
+              <p><a href="#zakaz">BUYURTMA BERISH</a></p>
+            </button>
+             
+            <div onClick={() => setMenu(!menu)} className="menu">
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
-
         <div className="hero">
           <div className="hero__left">
             <div className="hero__info">
@@ -35,13 +52,17 @@ function Header() {
                 100% tabiiy
               </h4>
               <h1>
-                Koreya qizil jenshen ichimligi
+                Koreya qizil jenshen 
+                ichimligi
               </h1>
-              <a href="#zakaz" className='a'>
+              {/* <a href="#" className='a'>
                 <button className="nav__btn">
                   BUYURTMA BERISH
                 </button>
-              </a>
+              </a> */}
+              <button className="nav__btn">
+              <a href="#zakaz">BUYURTMA BERISH</a>
+              </button>
             </div>
           </div>
           <div className="hero__right">
@@ -49,6 +70,16 @@ function Header() {
           </div>
         </div>
       </div>
+      <div style={menu === false ? {display: 'none'} : {zIndex: 999}} className="navbr__colapse">
+          <ul className='change_ul'>
+              <li> <a href="#"> Kompaniya haqida </a></li>
+              <li> <a href="#"> FAKTLAR </a></li>
+              <li> <a href="#"> MAHSULOT </a></li>
+            </ul>
+            <button className='nav__btn'>
+              <p><a href="#">BUYURTMA BERISH</a></p>
+            </button>
+        </div>
     </div>
   )
 }

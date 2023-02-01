@@ -36,6 +36,8 @@
     text-align: center;
 }
 .content__price{
+    display: flex;
+    align-items: baseline;
     font-family: 'Bitter';
     font-style: normal;
     font-weight: 600;
@@ -47,9 +49,10 @@
     border-bottom: 3px solid #770613;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
+    justify-content: center;
 }
 .content__price > span{
-    font-size: 30px;
+    font-size: 30px !important;
 }
 .content__info{
     font-family: 'Roboto Slab';

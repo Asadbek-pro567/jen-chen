@@ -1,6 +1,6 @@
 import React from 'react'
-import './Buyurtma.css'
-import mikr from '../../assets/img/mikrofon.png'
+import './Buyurtma.scss'
+import mikr from '../../assets/img/KARNAY.png'
 function Buyurtma() {
   return (
     <div>
@@ -21,9 +21,9 @@ function Buyurtma() {
             <div className="mikrofon">
                 <img src={mikr} alt="" className='mikr'/>
                 <h1 className='chegirma'>Chegirma</h1>
-                <h1 className='oldingi'>1 399 000</h1>
-                <h1 className='narx'>1 199 000</h1>
-                <h2 className='foyda'>foyda 200 000</h2>
+                <h1 className='oldingi'><h1>1 399 000</h1></h1>
+                <h1 className='narx'><h1>1 199 000</h1></h1>
+                <h2 className='foyda'><h4>foyda <span>200 000</span></h4></h2>
             </div>
             </div>
         </div>

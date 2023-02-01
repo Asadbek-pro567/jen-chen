@@ -10,7 +10,6 @@
         div{
             display: flex;
             justify-content: space-between;
-            // flex-wrap: wrap;
             color: #fff;
             list-style-type: none;
             h2{
@@ -19,10 +18,58 @@
             }
             p{
                 font-size: 26px;
+                z-index: 999;
             }
             img{
                 margin-top: -140px;
+                z-index: 1;
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about{
+        .containerrr{
+            padding: 0 20px;
+            div{
+                flex-wrap: wrap;
+                img{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    .about{
+        .containerrr{
+            div{
+                h2{
+                    font-size: 36px;
+                }
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .about{
+        .containerrr{
+            div{
+                h2{
+                    font-size: 26px;
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }

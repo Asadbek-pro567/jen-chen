@@ -1,0 +1,204 @@
+.Buyurtma {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.buyurtma {
+    color: white;
+    display: flex;
+    background: #770613;
+    background-image: url(../../assets/img/buyurtma.png);
+    object-fit: contain;
+    flex-direction: column;
+    height: 574px;
+    width: 572px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.buyurtma h2 {
+    font-family: Roboto Slab;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 65px;
+    text-align: center;
+}
+
+.buyurtma h4 {
+    margin: 0 auto;
+    height: 49.55944061279297px;
+    max-width: 400.38812255859375px;
+    font-family: Roboto Slab;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.buyurtma input {
+    color: white;
+    background: linear-gradient(0deg, #89363D, #89363D),
+        linear-gradient(0deg, rgba(176, 76, 8, 0), rgba(176, 76, 8, 0));
+    margin: 30px auto;
+    height: 67.81818389892578px;
+    width: 406.9090881347656px;
+    border-radius: 13.04195785522461px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.buyurtma button {
+    margin: 30px auto;
+    background: #167526;
+    border: none;
+    color: white;
+    height: 67.81818389892578px;
+    width: 408.2132873535156px;
+    border-radius: 6.520978927612305px;
+    cursor: pointer;
+}
+.buyurtma button a{
+    color: white;
+    text-decoration: none;
+}
+// .chegirma{
+//     color: white;
+//     font-family: Bitter;
+// font-size: 33px;
+// font-weight: 400;
+// line-height: 40px;
+// letter-spacing: 0em;
+// text-align: left;
+//     margin-top: -490px;
+//     margin-left: 250px;
+//     position: absolute;
+//     height: 40.00000047937316px;
+// width: 151.0000018096337px;
+// transform: rotate(8deg);
+// }
+// .oldingi{
+//     color: #E78743;
+//     margin-top: -380px;
+//     margin-left: 230px;
+//     transform: rotate(10deg);
+// }
+// .narx{
+//     color: white;
+//     margin-top: 80px;
+//     margin-left: 230px;
+//     transform: rotate(10deg);
+// }
+// .foyda{
+//     margin-top: 45px;
+//     margin-left: 200px;
+//     transform: rotate(8deg);
+// }
+
+
+
+.mikr{
+    margin-top: 200px;
+    z-index: 999;
+    margin-left: 140px;
+    animation: karnay 4s infinite ease-in-out;
+    @keyframes karnay {
+        0%{
+            transform: rotate(-10deg);
+        }
+        50%{
+            transform: rotate(5deg);
+        }
+        100%{
+            transform: rotate(-10deg);
+        }
+    }
+}
+.mikrofon{
+    // margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    margin-left: 0px;
+    .chegirma{
+        margin-top: -550px;
+        background: linear-gradient(90deg, #02C623 0%, #167526 79.68%);
+        color: #fff;
+        width: 180px;
+        box-shadow: 0px -11.6464px 17.4696px rgba(0, 0, 0, 0.2);
+        transform: skew(10deg) rotate(10deg) translateY(40px);
+        margin-bottom: 0px;
+    }
+    .oldingi{
+        width: 400px;
+        height: 110px;
+        background-color: #fff;
+        box-shadow: 0px 0px 34.9392px rgba(0, 0, 0, 0.5);
+        transform: skew(10deg) rotate(10deg) translateY(40px);
+        margin-bottom: 0;
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 72px;
+            text-align: center;
+            color: red;
+            text-decoration: line-through #E78743;
+        }
+    }
+    .narx{
+        width: 600px;
+        transform: skew(10deg) rotate(10deg) translateY(40px);
+        box-shadow: 0px 0px 34.9392px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(269.32deg, #167526 -0.1%, #00BC20 99.82%);
+        color: #fff;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 0;
+        h1{
+            font-size: 72px;
+        }
+    }
+    .foyda{
+        width: 243px;
+        transform: skew(10deg) rotate(10deg) translateY(40px);
+        color: #00BC20;
+        box-shadow: 10px 0px 34.9392px rgba(0, 0, 0, 0.5);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4{
+            span{
+                color: red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .Buyurtma{
+        .mikrofon{
+            .mikr{
+                width: 100%;
+                margin-left: 0px;
+                padding: 0px 40px;
+            }
+            // 167526
+            .chegirma{
+                background: linear-gradient(90deg, #02C623 0%, #167526 79.68%);
+                color: #fff;
+                box-shadow: 0px -11.6464px 17.4696px rgba(0, 0, 0, 0.2);
+                transform: skew(10deg) rotate(10deg) translateY(40px);
+            }
+        }
+    }
+}

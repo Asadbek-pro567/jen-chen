@@ -1,5 +1,5 @@
 import React from 'react'
-import './JenshenFarqi.css'
+import './JenshenFarqi.scss'
 import topImg from '../../assets/img/JenshenFarqiTop.png'
 import centerImg from '../../assets/img/JenshenFarqiCenter.png'
 import bottomImg from '../../assets/img/JenshenFarqiBottom.png'

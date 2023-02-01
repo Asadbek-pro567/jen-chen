@@ -27,18 +27,24 @@
     width: 500px;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.nav__ul li{
+    margin-top: 20px;
 }
 .nav__ul li a{
     color: black;
 }
 .nav__right {
+    flex-wrap: wrap;
+    text-align: center;
     max-width: 70%;
     height: 61px;
     display: flex;
     justify-content: space-between;
 }
-
+.hero__right img{
+}
 .nav img {
     object-fit: contain;
 }
@@ -49,7 +55,17 @@
     height: 21px;
     background-color: transparent;
 }
-
+.nav__select option{
+    color: black;
+}
+.none{
+    border: none;
+    background-color:transparent;
+    display: none;
+}
+.none option{
+    color: black;
+}
 .nav__btn {
     background: #167526;
     color: white;
@@ -74,7 +90,7 @@
 .hero__left {
     color: white;
     width: 100%;
-    background-image: url(../../assets/img/baground.png);
+    /* background-image: url(../../assets/img/baground.png); */
 }
 
 .hero {
@@ -109,4 +125,163 @@
 }
 .img {
     margin: 200px 0;
+}
+.change_ul{
+    width: 100%;
+    height: 20vh;
+    display: flex;flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.change_ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.navbr__colapse .nav__btn{
+    background-color: rgb(235, 232, 232);
+}
+.navbr__colapse  .nav__btn  a{
+    color: black !important;
+    text-decoration: none !important;
+}
+.navbr__colapse{
+    width: 100%;
+    z-index: 999;
+    overflow-y: auto;
+    min-height: 305px;
+    background-color: white;
+    position: absolute;
+    top: 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 15px 30px 30px 15px;
+    transition: all .2s ease;
+    left: 0;
+}
+.menu{
+    width: 35px;
+    height: 35px;
+    /* border: 1px solid red; */
+    display: none;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu span{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+    display: block;
+    z-index: 9999;
+}
+a{
+    text-decoration: none;
+}
+@media (max-width:1000px) {
+    .change_none{
+        display: none !important;
+    }
+    .menu{
+        display: flex;
+    }
+    .change_select{
+        margin: 8px 17px 8px 0 !important;
+    }
+}
+@media (max-width:1600px){
+    .nav__ul{
+        display: none;
+    }
+    .none{
+        display: block;
+        outline: none;
+    }
+    .uy{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+@media(max-width:1500px){
+    .hero{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        max-width: 770px;
+    }
+    .Header{
+        background: #770613;
+    }
+    .hero__info{
+        margin-top: 100px;
+        text-align: center;
+    }
+    .hero__info h4{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero__info h1{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .nav__select{
+        color: white;
+        outline: none;
+    }
+    .none{
+        color: white;
+    }
+    .hero__left button{
+        margin-top: 20px;
+    }
+    .Buyurtma{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .buyurtma{
+        margin: 80px auto;
+    }
+    .mikrofon{
+        margin-left: -100px;
+        max-width: 950px;
+        margin-bottom: 150px;
+    }
+    .mikrofon img{
+        width: 700px;
+        margin: 0 auto;
+        margin-left: 200px;
+        margin-bottom: 100px;
+    }
+    .chegirma{
+        margin-top:-580px;
+        margin-left: 280px;
+    }
+    .oldingi{
+        margin-left: 0;
+        margin-top: -500px;
+    }
+    .oldingi h1{
+        width: 300px;
+        margin-left: 200px;
+    }
+    .narx{
+    }
+    .narx h1{
+        width: 250px;
+    }
+    .foyda h4{
+        width: 250px;
+    }
 }
