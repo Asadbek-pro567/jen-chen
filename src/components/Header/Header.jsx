@@ -30,11 +30,7 @@ function Header() {
               <option value="Ru">Ru</option>
               <option value="Eng">Eng</option>
             </select>
-            {/* <a href="#zakaz" className='a'>
-                <button className="nav__btn">
-                  BUYURTMA BERISH
-                </button>
-              </a> */}
+            
              
             <div onClick={() => setMenu(!menu)} className="menu">
               <span></span>
