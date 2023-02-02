@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Header.css'
 import logo from '../../assets/img/logo.png'
 import img from '../../assets/img/img.png'
@@ -9,8 +9,12 @@ function Header() {
   const [ menu, setMenu ] = useState(false);
   const {language, setLanguage} = useContext(Context)
   
-  window.localStorage.setItem('language', language != '' ? language : 'uz')
+  const langu = (e)=>{
+    setLanguage(e.target.value)
+  }
+  window.localStorage.setItem('language', language ? language : 'uz')
   const lan = window.localStorage.getItem('language')
+
   return (
     <>
     <div className='Header'>
@@ -37,7 +41,7 @@ function Header() {
                   ))
                 }
                 </select>
-                <select className='change_select nav__select' onChange={(e)=> setLanguage(e.target.value)}>
+                <select className='change_select nav__select' onChange={langu}>
                   <option value="uz" selected={lan == 'uz' ? true : false}>Uz</option>
                   <option value="ru" selected={lan == 'ru' ? true : false}>Ru</option>
                   <option value="en" selected={lan == 'en' ? true : false}>Eng</option>
