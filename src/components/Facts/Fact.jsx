@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Fact.css';
 import factCard from '../../assets/img/factCard.png';
 import { FactsInNum } from '../../assets/data/Data';
+import { Context } from '../Context/Context';
 
 const Fact = () => {
+    const {language, setLanguage} = useContext(Context)
     return (
         <div className='Fact' id='faktlar'>
             <div className="mycontainer">
-                <div className="fact__title">{FactsInNum[0].title_uz}</div>
+                <div className="fact__title">{FactsInNum?.map((e)=>e[`title_${language}`])}</div>
                 <div className="fact__cards">
                     <div className="fact__row">
                         <div className="fact__card">

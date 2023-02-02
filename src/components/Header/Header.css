@@ -60,9 +60,13 @@
     margin: 20px;
     height: 21px;
     background-color: transparent;
+    outline: none;
 }
 .nav__select option{
-    color: black;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: crimson;
 }
 .none{
     border: none;
