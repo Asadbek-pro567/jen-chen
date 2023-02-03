@@ -70,7 +70,7 @@ const Footer = () => {
                                     <>
                                     <div key={i} className="form__title">{e[`text_${language}`]}</div>
                                     <input key={i} name='name' type="text" placeholder='Ismingiz' />
-                                    <input key={i} name='tel' type="text"  placeholder='raqam' />
+                                    <input key={i} name='tel' type="text" defaultValue={+998}/>
                                     <button key={i} type='submit'>{e[`title_${language}`]}</button>
                                     </>
                                 ))
