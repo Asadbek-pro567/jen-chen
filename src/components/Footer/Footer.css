@@ -1,5 +1,7 @@
-.Footer{
-    background: linear-gradient(180deg, #AC2232 0%, #5B040E 100%);
+.footer{
+    background: url('../../assets/img/footer-bi.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mycontainerrr {
@@ -8,7 +10,7 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: auto;
-    background-image: url(../../assets/img/footerImage.png);
+    /* background-image: url(../../assets/img/footerImage.png); */
 }
 
 .footer__row{
@@ -130,7 +132,6 @@
     border: none;
     cursor: pointer;
 }
-
 
 @media (max-width: 885px) {
     .footer__row{
