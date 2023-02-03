@@ -33,7 +33,9 @@ function Header() {
       <div className={scrol ? 'active' : ''}>
         <div className='mycontainerrrr'>
           <div className='nav'>
+            <a href="#">
             <img src={logo} alt="" />
+            </a>
                 <div className="nav__right">
                   <ul className='change_none nav__ul'>
                   {
