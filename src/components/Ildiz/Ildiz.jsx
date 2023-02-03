@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Question } from '../../assets/data/Data'
+import { Context } from '../Context/Context'
 import './Ildiz.css'
 
 function Ildiz() {
+    const {language, setLanguage} = useContext(Context)
+
   return (
     <>
     <div className='ildiz__container'>
@@ -11,8 +14,8 @@ function Ildiz() {
                 {
                     Question?.map((e,i)=>(
                         <>
-                        <h3>{e.title_uz}</h3>
-                        <p>{e.text_uz}</p>
+                        <h3>{e[`title_${language}`]}</h3>
+                        <p>{e[`title_${language}`]}</p>
                         </>
                     ))
                 }   

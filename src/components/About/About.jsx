@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { AboutCompany } from '../../assets/data/Data'
 import './About.scss'
 import Uy from '../../assets/img/katta__uycha.png'
+import { Context } from '../Context/Context'
 
 function About() {
+    const {language, setLanguage} = useContext(Context)
   return (
     <>
     <div className='about'>
@@ -11,9 +13,9 @@ function About() {
             <div id='about'>
                 {
                     AboutCompany?.map((e,i)=>(
-                        <li>
-                            <h2>{e.title_uz}</h2>
-                            <p>{e.text_uz}</p>
+                        <li key={i}>
+                            <h2>{e[`title_${language}`]}</h2>
+                            <p>{e[`text_${language}`]}</p>
                         </li>
                     ))
                 }

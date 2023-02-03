@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './JenChen.css'
 import { ShouldDrink } from '../../assets/data/Data'
+import { Context } from '../Context/Context'
 
 function JenChen() {
+    const {language, setLanguage} = useContext(Context)
   return (
     <>
     <div className='containercha'>
@@ -16,7 +18,7 @@ function JenChen() {
                             <ul>
                                 {
                                     e.cause.map((item)=>(
-                                        <li>{item.text_uz}</li>
+                                        <li>{item[`text_${language}`]}</li>
                                     ))
                                 }
                             </ul>

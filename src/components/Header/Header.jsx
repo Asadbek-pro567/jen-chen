@@ -1,66 +1,83 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Header.css'
 import logo from '../../assets/img/logo.png'
 import img from '../../assets/img/img.png'
+import { Context } from '../Context/Context';
+import { Btn, Nav, Slider } from '../../assets/data/Data';
 function Header() {
 
   const [ menu, setMenu ] = useState(false);
+  const {language, setLanguage} = useContext(Context)
+  
+  const langu = (e)=>{
+    setLanguage(e.target.value)
+  }
+  window.localStorage.setItem('language', language ? language : 'uz')
+  const lan = window.localStorage.getItem('language')
+
   return (
+    <>
     <div className='Header'>
       <div className="mycontainerrrr">
         <div className="nav">
           <img src={logo} alt="" />
-          <div className="nav__right">
-            {/* <ul className='nav__ul'>
-              <li> <a href="#"> Kompaniya haqida </a></li>
-              <li> <a href="#"> FAKTLAR </a></li>
-              <li> <a href="#"> MAHSULOT </a></li> */}
-            <ul className='change_none nav__ul'>
-              <li> <a href="#about"> Kompaniya haqida </a></li>
-              <li> <a href="#faktlar"> FAKTLAR </a></li>
-              <li> <a href="#mahsulot"> MAHSULOT </a></li>
-            </ul>
-            <select className='change_none none'>
-              <option value="">Kompaniya haqida</option>
-              <option value="">FAKTLAR </option>
-              <option value="">MAHSULOT </option>
-            </select>
-            <select className='change_select nav__select'>
-              <option value="Uz">Uz</option>
-              <option value="Ru">Ru</option>
-              <option value="Eng">Eng</option>
-            </select>
-            {/* <a href="#zakaz" className='a'>
-                <button className="nav__btn">
-                  BUYURTMA BERISH
-                </button>
-              </a> */}
-             
-            <div onClick={() => setMenu(!menu)} className="menu">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
+              <div className="nav__right">
+                <ul className='change_none nav__ul'>
+                {
+                  Nav?.map((e,i)=>(
+                  <>
+                    <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                  </>
+                  ))
+                }
+
+                </ul>
+                <select className='change_none none'>
+                {
+                  Nav?.map((e,i)=>(
+                  <>
+                    <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                  </>
+                  ))
+                }
+                </select>
+                <select className='change_select nav__select' onChange={langu}>
+                  <option value="uz" selected={lan == 'uz' ? true : false}>Uz</option>
+                  <option value="ru" selected={lan == 'ru' ? true : false}>Ru</option>
+                  <option value="en" selected={lan == 'en' ? true : false}>Eng</option>
+                </select>
+                
+                
+                <div onClick={() => setMenu(!menu)} className="menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
         </div>
         <div className="hero">
           <div className="hero__left">
             <div className="hero__info">
-              <h4>
-                100% tabiiy
-              </h4>
-              <h1>
-                Koreya qizil jenshen 
-                ichimligi
-              </h1>
-              {/* <a href="#" className='a'>
-                <button className="nav__btn">
-                  BUYURTMA BERISH
-                </button>
-              </a> */}
-              <button className="nav__btn">
-              <a href="#zakaz">BUYURTMA BERISH</a>
-              </button>
-            </div>
+                {
+                  Slider?.map((e,i)=>(
+                  <>
+                    <h4 key={i}>
+                      {e[`natural`]}% tabiiy
+                    </h4>
+                    <h1 key={i}>
+                      {e[`title_${language}`]}
+                    </h1>
+                  </>
+                  ))
+                }
+                  {
+                    Btn?.map((e,i)=>(
+                    <button key={i} className="nav__btn">
+                      <a href="#zakaz">{e[`title_${language}`]}</a>
+                    </button>
+                    ))
+                  }
+                </div>
           </div>
           <div className="hero__right">
             <img src={img} alt="" className='img'/>
@@ -68,16 +85,25 @@ function Header() {
         </div>
       </div>
       <div style={menu === false ? {display: 'none'} : {zIndex: 999}} className="navbr__colapse">
-          <ul className='change_ul'>
-              <li> <a href="#"> Kompaniya haqida </a></li>
-              <li> <a href="#"> FAKTLAR </a></li>
-              <li> <a href="#"> MAHSULOT </a></li>
+          <ul className='change_ul' onClick={()=>setMenu(!menu)}>
+                {
+                  Nav?.map((e,i)=>(
+                  <>
+                    <li key={i}> <a key={i} href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                  </>
+                  ))
+                }
             </ul>
             <button className='nav__btn'>
-              <p><a href="#">BUYURTMA BERISH</a></p>
+              {
+                Btn?.map((e,i)=>(
+                  <p key={i}><a href="#zakaz">{e[`title_${language}`]}</a></p>
+                ))
+              }
             </button>
         </div>
     </div>
+    </>
   )
 }
 

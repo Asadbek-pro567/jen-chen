@@ -136,6 +136,7 @@
 @media (max-width: 885px) {
     .footer__row{
         align-items: flex-start;
+        padding: 94px 20px;
     }
     .footer__components{
         margin-top: 0;
@@ -153,7 +154,7 @@
         margin-left: 0;
     }
     .footer__row{
-        padding: 94px 0;
+        padding: 94px 20px;
     }
     .mycontainerrr{
         padding: 0 20px;

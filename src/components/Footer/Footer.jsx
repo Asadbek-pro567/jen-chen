@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Footer.css';
-// import footMainBack from '../../assets/img/footMainBack2.png';
 import footerImage from '../../assets/img/footerImage.png';
 import logo from '../../assets/img/logo.png';
+import { Nav, Order } from '../../assets/data/Data';
+import { Context } from '../Context/Context';
 
 const Footer = () => {
 
@@ -27,6 +28,7 @@ const Footer = () => {
         e.target.elements.tel.value = '998'
       }
 
+    const {language, setLanguage} = useContext(Context)
     return (
         <div  className='footer'>
             <div className="mycontainerrr">
@@ -55,16 +57,24 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="footer__components">
-                        <div className="component"><a href="#about">KOMPANIYA HAQIDA</a></div>
-                        <div className="component"><a href="#faktlar">FAKTLAR</a></div>
-                        <div className="component"><a href="#mahsulot">MAHSULOT</a></div>
+                        {
+                            Nav?.map((e,i)=>(
+                                <div key={i} className="component"><a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></div>
+                            ))
+                        }
                     </div>
                     <div className="footer__form">
                         <form onSubmit={formReg} action="#" method='post' className="form">
-                            <div className="form__title">Formani toʻldiring, mutaxascislardan bepul konsultatsiya oling va chegirmaga ega boling</div>
-                            <input type="text" name='name' placeholder='Ismingiz' />
-                            <input type="text" name='tel'  placeholder='raqam' />
-                            <button type='submit'>Buyurtma berish</button>
+                            {
+                                Order?.map((e,i)=>(
+                                    <>
+                                    <div key={i} className="form__title">{e[`text_${language}`]}</div>
+                                    <input key={i} name='name' type="text" placeholder='Ismingiz' />
+                                    <input key={i} name='tel' type="text"  placeholder='raqam' />
+                                    <button key={i} type='submit'>{e[`title_${language}`]}</button>
+                                    </>
+                                ))
+                            }
                         </form>
                     </div>
                 </div>

@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    align-items: center;
+}
+.nav img{
+    width: 150px;
 }
 
 .nav__ul {
@@ -41,6 +45,7 @@
     max-width: 70%;
     height: 61px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .hero__right img{
@@ -55,9 +60,13 @@
     margin: 20px;
     height: 21px;
     background-color: transparent;
+    outline: none;
 }
 .nav__select option{
-    color: black;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: crimson;
 }
 .none{
     border: none;
@@ -143,6 +152,7 @@
 }
 .navbr__colapse .nav__btn{
     background-color: rgb(235, 232, 232);
+    margin-bottom: 0;
 }
 .navbr__colapse  .nav__btn  a{
     color: black !important;
@@ -153,7 +163,7 @@
     z-index: 999;
     overflow-y: auto;
     min-height: 305px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.923);
     position: absolute;
     top: 137px;
     display: flex;
@@ -244,9 +254,6 @@ a{
     .img{
         max-width: 770px;
     }
-    .Header{
-        /* background: #770613; */
-    }
     .hero__info{
         margin-top: 100px;
         text-align: center;
@@ -299,8 +306,6 @@ a{
     .oldingi h1{
         width: 300px;
         margin-left: 200px;
-    }
-    .narx{
     }
     .narx h1{
         width: 250px;
