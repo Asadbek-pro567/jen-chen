@@ -15,7 +15,7 @@ function Ildiz() {
                     Question?.map((e,i)=>(
                         <>
                         <h3>{e[`title_${language}`]}</h3>
-                        <p>{e[`title_${language}`]}</p>
+                        <p>{e[`text_${language}`]}</p>
                         </>
                     ))
                 }   
