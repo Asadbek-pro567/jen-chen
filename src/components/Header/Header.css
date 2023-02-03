@@ -1,25 +1,39 @@
 .Header {
     background-image: url(../../assets/img/header.bag.jpg);
-    max-width: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .mycontainerrrr {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 1440px;
+}
+.active{
+    background-color: #760612;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.active .nav__ul li a, .active .nav__select{
+    color: #fff;
 }
 
+
 .nav {
-    padding-top: 50px;
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     align-items: center;
+    z-index: 999;
 }
 .nav img{
     width: 150px;
 }
+
 
 .nav__ul {
     font-family: Roboto Slab;
@@ -240,6 +254,19 @@ a{
     }
     .menu{
         display: flex;
+    }
+    
+    .xxx > span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    .xxx > span:nth-child(2){
+        display: none;
+    }
+    .xxx > span:nth-child(3){
+        transform: rotate(-45deg);
+        margin-top: -12px;
+    }
+    .xxx > span{
     }
     .change_select{
         margin: 8px 17px 8px 0 !important;

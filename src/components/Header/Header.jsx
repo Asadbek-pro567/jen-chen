@@ -14,47 +14,63 @@ function Header() {
   }
   window.localStorage.setItem('language', language ? language : 'uz')
   const lan = window.localStorage.getItem('language')
+  const [scrol, setScrol] = React.useState(false)
+  const offSet = 80;
+
+  const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
+
+  window.addEventListener('scroll', () => {
+    if (getTop() > offSet) {
+      setScrol(true)
+    } else {
+      setScrol(false)
+    }
+  })
 
   return (
     <>
     <div className='Header'>
-      <div className="mycontainerrrr">
-        <div className="nav">
-          <img src={logo} alt="" />
-              <div className="nav__right">
-                <ul className='change_none nav__ul'>
-                {
-                  Nav?.map((e,i)=>(
-                  <>
-                    <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
-                  </>
-                  ))
-                }
+      <div className={scrol ? 'active' : ''}>
+        <div className='mycontainerrrr'>
+          <div className='nav'>
+            <img src={logo} alt="" />
+                <div className="nav__right">
+                  <ul className='change_none nav__ul'>
+                  {
+                    Nav?.map((e,i)=>(
+                    <>
+                      <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                    </>
+                    ))
+                  }
 
-                </ul>
-                <select className='change_none none'>
-                {
-                  Nav?.map((e,i)=>(
-                  <>
-                    <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
-                  </>
-                  ))
-                }
-                </select>
-                <select className='change_select nav__select' onChange={langu}>
-                  <option value="uz" selected={lan == 'uz' ? true : false}>Uz</option>
-                  <option value="ru" selected={lan == 'ru' ? true : false}>Ru</option>
-                  <option value="en" selected={lan == 'en' ? true : false}>Eng</option>
-                </select>
-                
-                
-                <div onClick={() => setMenu(!menu)} className="menu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  </ul>
+                  <select className='change_none none'>
+                  {
+                    Nav?.map((e,i)=>(
+                    <>
+                      <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                    </>
+                    ))
+                  }
+                  </select>
+                  <select className='change_select nav__select' onChange={langu}>
+                    <option value="uz" selected={lan == 'uz' ? true : false}>Uz</option>
+                    <option value="ru" selected={lan == 'ru' ? true : false}>Ru</option>
+                    <option value="en" selected={lan == 'en' ? true : false}>Eng</option>
+                  </select>
+                  
+                  
+                  <div onClick={() => setMenu(!menu)} className={menu == true ? 'xxx menu' : 'menu'}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
                 </div>
-              </div>
+          </div>
         </div>
+      </div>
+      <div className="mycontainerrrr">
         <div className="hero">
           <div className="hero__left">
             <div className="hero__info">

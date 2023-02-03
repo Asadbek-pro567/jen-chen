@@ -17,6 +17,20 @@
     text-align: center;
     margin: 150px 0 60px 0;
 }
+.fact__image{
+    /* animation: scal 3.2s ease-in-out infinite; */
+}
+@keyframes scal {
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform:  rotate(-1deg);
+    }
+}
 
 .fact__row{
     display: flex;
@@ -28,6 +42,8 @@
 .fact__card{
     position: relative !important;
     margin-bottom: 30px;
+    animation: scal 3.2s ease-in-out infinite;
+    transform-origin: 150px 50px;
 }
 .fact__content{
     position: absolute;

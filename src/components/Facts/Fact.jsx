@@ -7,7 +7,7 @@ import { Context } from '../Context/Context';
 const Fact = () => {
     const {language, setLanguage} = useContext(Context)
     return (
-        <div className='Fact' id='faktlar'>
+        <div className='Fact' id='Facts'>
             <div className="mycontainer">
                 <div className="fact__title">{FactsInNum?.map((e)=>e[`title_${language}`])}</div>
                 <div className="fact__cards">

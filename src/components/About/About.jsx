@@ -10,7 +10,7 @@ function About() {
     <>
     <div className='about'>
         <div className="containerrr">
-            <div id='about'>
+            <div id='About Company'>
                 {
                     AboutCompany?.map((e,i)=>(
                         <li key={i}>

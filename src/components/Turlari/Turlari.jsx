@@ -9,7 +9,7 @@ import { Product } from '../../assets/data/Data'
 function Turlari() {
   const { language, setLanguage } = useContext(Context)
     return (
-        <div className='turlari' id='mahsulot'>
+        <div className='turlari' id='Product'>
             <div className="myycontainer">
                 <div className="js">
                     <ul className="uyyyyy">
