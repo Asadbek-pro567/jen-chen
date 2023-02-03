@@ -39,7 +39,7 @@ function Header() {
                   {
                     Nav?.map((e,i)=>(
                     <>
-                      <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                      <li> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
                     </>
                     ))
                   }
@@ -49,7 +49,7 @@ function Header() {
                   {
                     Nav?.map((e,i)=>(
                     <>
-                      <li key={i}> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
+                      <li> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
                     </>
                     ))
                   }
@@ -76,19 +76,19 @@ function Header() {
             <div className="hero__info">
                 {
                   Slider?.map((e,i)=>(
-                  <>
-                    <h4 key={i}>
+                  <div>
+                    <h4>
                       {e[`natural`]}% tabiiy
                     </h4>
-                    <h1 key={i}>
+                    <h1>
                       {e[`title_${language}`]}
                     </h1>
-                  </>
+                  </div>
                   ))
                 }
                   {
                     Btn?.map((e,i)=>(
-                    <button key={i} className="nav__btn">
+                    <button className="nav__btn">
                       <a href="#zakaz">{e[`title_${language}`]}</a>
                     </button>
                     ))
@@ -104,16 +104,14 @@ function Header() {
           <ul className='change_ul' onClick={()=>setMenu(!menu)}>
                 {
                   Nav?.map((e,i)=>(
-                  <>
-                    <li key={i}> <a key={i} href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
-                  </>
+                    <li> <a href={`#${e.nav_en}`}>{e[`nav_${language}`]}</a></li>
                   ))
                 }
             </ul>
             <button className='nav__btn'>
               {
                 Btn?.map((e,i)=>(
-                  <p key={i}><a href="#zakaz">{e[`title_${language}`]}</a></p>
+                  <p><a href="#zakaz">{e[`title_${language}`]}</a></p>
                 ))
               }
             </button>

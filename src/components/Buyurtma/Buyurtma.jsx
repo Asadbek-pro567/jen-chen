@@ -34,19 +34,19 @@ function Buyurtma() {
             <form action="#" onSubmit={formReg}>
               {
                 Btn?.map((e, i) => (
-                  <h2 key={i}>{e[`title_${language}`]}</h2>
+                  <h2>{e[`title_${language}`]}</h2>
                 ))
               }
               {
                 Consultation?.map((e, i) => (
-                  <h4 key={i}>{e[`text_${language}`]}</h4>
+                  <h4>{e[`text_${language}`]}</h4>
                 ))
               }
               <input type="text" name='name' placeholder='Ism' />
               <input type="text" name='tel' placeholder='+998' />
               {
                 Btn?.map((e, i) => (
-                  <a href="#" key={i}>
+                  <a href="#">
                     <button type='submit'>
                       {e[`title_${language}`]}
                     </button>
@@ -60,10 +60,10 @@ function Buyurtma() {
             {
               Order?.map((e, i) => (
                 <>
-                  <h1 key={i} className='chegirma'>{e[`sale_${language}`]}</h1>
-                  <h1 key={i} className='oldingi'><h1>1 399 000</h1></h1>
-                  <h1 key={i} className='narx'><h1>1 199 000</h1></h1>
-                  <h2 key={i} className='foyda'><h4>{e[`sale_${language}`]}<span>200 000</span></h4></h2>
+                  <h1 className='chegirma'>{e[`sale_${language}`]}</h1>
+                  <h1 className='oldingi'><h1>1 399 000</h1></h1>
+                  <h1 className='narx'><h1>1 199 000</h1></h1>
+                  <h2 className='foyda'><h4>{e[`sale_${language}`]}<span>200 000</span></h4></h2>
                 </>
               ))
             }
