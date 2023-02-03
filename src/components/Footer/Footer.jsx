@@ -27,7 +27,7 @@ const Footer = () => {
         e.target.elements.name.value = ''
         e.target.elements.tel.value = '998'
       }
-
+      console.log('ok');
     const {language, setLanguage} = useContext(Context)
     return (
         <div  className='footer'>
