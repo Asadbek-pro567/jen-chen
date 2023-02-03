@@ -145,7 +145,7 @@ function Header() {
               ))
             }
           </ul>
-          <button className='nav__btn'>
+          <button className='nav__btn' onClick={()=>setMenu(!menu)}>
             {
               Btn?.map((e, i) => (
                 <p><a href="#zakaz">{e[`title_${language}`]}</a></p>

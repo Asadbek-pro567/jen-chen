@@ -193,7 +193,7 @@
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 15px 30px 30px 15px;
-    transition: all .2s ease;
+    transition: 0.2s ease-in-out;
     left: 0;
     position: fixed;
 }
@@ -215,6 +215,7 @@
     border-radius: 1px;
     display: block;
     z-index: 9999;
+    transition: 0.2s ease;
 }
 a{
     text-decoration: none;
