@@ -31,8 +31,8 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 26px;
     text-align: left;
     color: #FFFFFF;
     margin: 38px 0 65px;
@@ -54,6 +54,9 @@
 .link > a{
     color: white;
     text-decoration: none;
+}
+.link{
+    font-size: 26px;
 }
 
 /* Components start */
@@ -121,7 +124,7 @@
     color: white;
 }
 .form > button{
-    width: 100%;
+    width: 94%;
     text-align: center;
     padding: 17.5px 0;
     margin-top: 34px;
@@ -132,6 +135,10 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.4s ease-in-out all;
+}
+.form > button:hover {
+    transform: scale(0.95);
 }
 
 @media (max-width: 885px) {

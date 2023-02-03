@@ -62,10 +62,14 @@
     width: 408.2132873535156px;
     border-radius: 6.520978927612305px;
     cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
 .buyurtma button a{
     color: white;
     text-decoration: none;
+}
+.buyurtma button:hover {
+    transform: scale(0.95);
 }
 // .chegirma{
 //     color: white;
