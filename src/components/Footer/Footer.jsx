@@ -7,27 +7,35 @@ import { Context } from '../Context/Context';
 
 const Footer = () => {
 
-    const formReg = (e) => {
+    const formRege = (e) => {
         e.preventDefault()
         const el = e.target.elements
-        fetch('https://638208329842ca8d3c9f7558.mockapi.io/get-zapros', {
-          method: 'POST',
-          headers: {
-            'Content-type': 'application/json', // qysi formatta yuborish
-            'Accept': 'application/json', // qysi formatta uni qabul qilib olishi
-            'Access-Control-Allow-Origin': '*' // ruxsat berish hammaga
-          },
-          body: JSON.stringify({
-            name: el.name.value,
-            tel: parseInt(el.tel.value)
+        if(el.tel.value.length == 12 && el.name.value.length > 2 ){
+          fetch('https://638208329842ca8d3c9f7558.mockapi.io/get-zapros', {
+            method: 'POST',
+            headers: {
+              'Content-type': 'application/json', // qysi formatta yuborish
+              'Accept': 'application/json', // qysi formatta uni qabul qilib olishi
+              'Access-Control-Allow-Origin': '*' // ruxsat berish hammaga
+            },
+            body: JSON.stringify({
+              name: el.name.value,
+              tel: parseInt(el.tel.value)
+            })
           })
-        })
-          .then((res) => res.json())
-          .then((data) => console.log(data))
-        e.target.elements.name.value = ''
-        e.target.elements.tel.value = '998'
+            .then((res) => res.json())
+            .then((data) => console.log(data))
+          e.target.elements.name.value = ''
+          e.target.elements.tel.value = '998'
+          el.name.style.border = '2px solid green'
+          el.tel.style.border = '2px solid green'
+          alert('Murojatingiz qabul qilindi. Tez orada siz bn boglanamiz')
+        }else{
+          el.name.style.border = '2px solid red'
+          el.tel.style.border = '2px solid red'
+          alert('Natogri kiritingiz. Qaytadan urunin')
+        }
       }
-      console.log('ok');
     const {language, setLanguage} = useContext(Context)
     return (
         <div  className='footer'>
@@ -64,7 +72,7 @@ const Footer = () => {
                         }
                     </div>
                     <div className="footer__form">
-                        <form onSubmit={formReg} action="#" method='post' className="form">
+                        <form onSubmit={formRege} action="#" method='post' className="form">
                             {
                                 Order?.map((e,i)=>(
                                     <>

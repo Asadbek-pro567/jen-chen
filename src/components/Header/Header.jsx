@@ -27,7 +27,7 @@ function Header() {
       setScrol(false)
     }
   })
-  if (window.innerWidth <= 1100) {
+  if (window.innerWidth <= 1040) {
     if (asda.current) {
       asda.current.style = 'display: none'
     }
@@ -41,7 +41,18 @@ function Header() {
       asda.current.style = 'display: none'
       }
     }
-    
+  }
+  if(window.innerWidth >=1040){
+     window.addEventListener('resize', (e)=>{
+        if(menu == true){
+        setMenu(false)
+      }
+    })
+  }
+  if(menu == true){
+    document.body.style.overflowY = 'hidden'
+  }else{
+    document.body.style.overflowY = 'auto'
   }
 
   return (
