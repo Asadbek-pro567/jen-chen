@@ -142,6 +142,9 @@
 }
 
 @media (max-width: 885px) {
+    .footer{
+        background: #760612;
+    }
     .footer__row{
         align-items: flex-start;
         padding: 94px 20px;
@@ -157,7 +160,6 @@
     }
 }
 @media (max-width: 525px) {
-   
     .footer__components{
         margin-left: 0;
     }
